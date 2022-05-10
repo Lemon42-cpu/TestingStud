@@ -3,6 +3,8 @@ import { Route, Routes, Link } from 'react-router-dom'
 
 import Home from '../pages/Home'
 import Profile from '../pages/Profile'
+import Test from './Test'
+
 
 export default function Header() {
   return (
@@ -17,6 +19,7 @@ export default function Header() {
                 <li>
                   <Link to="/profile">Профиль</Link>
                   </li>
+
                 <li>Выход</li>
             </ul>
         </div>
@@ -24,6 +27,7 @@ export default function Header() {
     <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/profile" element={<Profile />}/>
+        <Route path="/test" element={<Test />}/>
       </Routes>
     </>
   )

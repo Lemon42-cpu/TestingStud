@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Items from '../components/Items'
 
+
 export default class Home extends Component {
     constructor(props) {
         super(props)
@@ -9,7 +10,6 @@ export default class Home extends Component {
             {
               id: 1,
               title: 'Разработка клиент-серверного приложения',
-              // desc:
               category: 'IT' 
             },
             {
