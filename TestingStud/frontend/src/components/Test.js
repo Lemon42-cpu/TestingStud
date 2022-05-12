@@ -1,37 +1,40 @@
-import React, { useReducer } from 'react'
+import React, { useContext } from 'react'
+import { TestContext } from '../context/Test';
 import Question from "./Question"
 
-const initialState = {
-  questions: [],
-  currentQuestionIndex: 0,
-};
 
-const reducer = (state, action) => {
-  console.log("reducer", state, action);
-  if (action.type === "NEXT_QUESTION"){
-    return{
-      ...state,
-      currentQuestionIndex: state.currentQuestionIndex + 1,
-    };
-  }
-  return state;
-};
+
 
 const Test = () => {
   // const [currentQuestionIndex, setCurrenQuestionIndex] = useState(0);
   // console.log("result", currentQuestionIndex);
-  const [state, dispatch] = useReducer(reducer, initialState);
-  console.log('state', state);
+  const [testState, dispatch] = useContext(TestContext);
+  console.log('state', testState);
 
   return (
     <div className='quiz'>
-      {/* {currentQuestionIndex} */}
+      {testState.showResults && (
+        <div className='results'>
+          <div className='congratulations'>УРА!</div>
+          <div className='reults-info'>
+            <div>Вы прошли тест!</div>
+            <div>Вы правильно ответили на {testState.correctAnswerCount} из {testState.questions.length}</div>
+            <div className='next-button' onClick={() => dispatch({type: "RESTART"})}>Заново</div>
+          </div>
+          </div>
+      )}
+      {!testState.showResults && (
       <div>
-      <div className='score'>Question 1/8</div>
+      <div className='score'>
+        {testState.currentQuestionIndex + 1}/
+        {testState.questions.length}
+        </div>
       <Question />
       {/* <div className='next-button' onClick={() => setCurrenQuestionIndex(currentQuestionIndex + 1)}>Next question</div> */}
-      <div className='next-button' onClick={() => dispatch({ type: "NEXT_QUESTION"})}>Далее</div>
+      <div className='next-button'
+       onClick={() => dispatch({ type: "NEXT_QUESTION"})}>Далее</div>
       </div>
+      )}
     </div>
   );
 };
