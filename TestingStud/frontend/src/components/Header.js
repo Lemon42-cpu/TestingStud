@@ -14,10 +14,10 @@ export default function Header() {
             <span className='logo'>Тестирование студентов</span>
             <ul className='nav'>
                 <li>
-                  <Link to="/" >Тесты</Link>
+                  <Link to="/"  style={{ textDecoration: 'none' }}>Тесты</Link>
                   </li>
                 <li>
-                  <Link to="/profile">Профиль</Link>
+                  <Link to="/profile" style={{ textDecoration: 'none' }}>Профиль</Link>
                   </li>
 
                 <li>Выход</li>

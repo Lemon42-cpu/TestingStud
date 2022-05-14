@@ -25,7 +25,7 @@ const data = [
       correctAnswer: "<style>",
     },
     {
-      question: "Which HTML attribute is used to define inline styles?",
+      question: "Какой атрибут HTML используется для определения встроенных стилей?",
       incorrectAnswers: ["class", "font", "styles"],
       correctAnswer: "style",
     },

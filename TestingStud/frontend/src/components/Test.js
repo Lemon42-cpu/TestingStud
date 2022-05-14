@@ -2,15 +2,9 @@ import React, { useContext } from 'react'
 import { TestContext } from '../context/Test';
 import Question from "./Question"
 
-
-
-
 const Test = () => {
-  // const [currentQuestionIndex, setCurrenQuestionIndex] = useState(0);
-  // console.log("result", currentQuestionIndex);
   const [testState, dispatch] = useContext(TestContext);
   console.log('state', testState);
-
   return (
     <div className='quiz'>
       {testState.showResults && (
@@ -30,7 +24,6 @@ const Test = () => {
         {testState.questions.length}
         </div>
       <Question />
-      {/* <div className='next-button' onClick={() => setCurrenQuestionIndex(currentQuestionIndex + 1)}>Next question</div> */}
       <div className='next-button'
        onClick={() => dispatch({ type: "NEXT_QUESTION"})}>Далее</div>
       </div>

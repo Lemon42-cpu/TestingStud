@@ -31,6 +31,7 @@ header .logo{
     background-position: center;
     background-color: aquamarine;
     position:relative;
+
 }
 
 header ul.nav{
@@ -49,7 +50,7 @@ header ul.nav hover{
     opacity: 0.5;
 }
 
-header .presentation::after {
+.presentation::after {
     content: 'Тестирование';
     position: absolute;
     top: 100px;
@@ -60,8 +61,8 @@ header .presentation::after {
     color: rgb(38, 238, 115);
 }
 
-header .presentation::before {
-    content: 'Онлайн сервис для прохождения онлайн тестов';
+.presentation::before {
+    content: 'Сервис для прохождения онлайн тестов';
     position: absolute;
     top: 150px;
     left: 50px;
