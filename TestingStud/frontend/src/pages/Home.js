@@ -9,12 +9,12 @@ export default class Home extends Component {
           items: [
             {
               id: 1,
-              title: 'Разработка клиент-серверного приложения',
+              title: 'РКСП',
               category: 'IT' 
             },
             {
               id: 2,
-              title: 'Объектно-ореинтированное программирование',
+              title: 'ООП',
               category: 'IT'
             },
             {

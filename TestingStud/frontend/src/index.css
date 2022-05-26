@@ -281,4 +281,22 @@ footer{
     background-color: #4CAF50;
     color: white;
 }
+
+.doughnut {
+  width: 30%;
+  margin: 5% auto;
+  display: flex;
+    align-items: right;
+    justify-content: right;
+    background-position: right;
+}
+
+.gistogram{
+  width: 80%;
+  margin: 5% auto;
+  display: flex;
+    align-items: right;
+    justify-content: right;
+    background-position: right;
+}
   

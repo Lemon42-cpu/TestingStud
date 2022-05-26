@@ -5,6 +5,7 @@ import Home from '../pages/Home'
 import Profile from '../pages/Profile'
 import Gistogram from './Gistogram'
 import Test from './Test'
+import DoughnutChart from './DoughnutChart'
 
 
 export default function Header() {
@@ -29,7 +30,8 @@ export default function Header() {
         <Route path="/" element={<Home />}/>
         <Route path="/profile" element={<Profile />}/>
         <Route path="/test" element={<Test />}/>
-        <Route path="/profile/gistogramm" element={<Gistogram />}/>
+        <Route path="/profile/doughnut" element={<DoughnutChart />}/>
+        <Route path="/profile/gistogram" element={<Gistogram />}/>
       </Routes>
     </>
   )

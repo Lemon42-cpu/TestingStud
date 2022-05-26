@@ -17,9 +17,9 @@ const Profile = () => {
                 <Link to="/profile" style={{ textDecoration: 'none' }}>Таблица</Link>
                   </li>
                 <li>
-                  График
+                 Прогресс
                   </li>
-                <li><Link to="/profile/gistogramm" style={{ textDecoration: 'none' }}>Гистрограмма</Link></li>
+                <li><Link to="/profile/gistogram" style={{ textDecoration: 'none' }}>Гистрограмма</Link></li>
         </div>        
         <div className='table'>
         <div className="user">
