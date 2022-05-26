@@ -14,22 +14,34 @@ class Table extends Component {
                              dataField='id'
                              dataAlign='center'
                              headerAlign="left"
-                             width="30"
                             //  tdStyle={
                             //      {backgroundColor: 'green'}}
                                  >
-            ID
+            Номер
           </TableHeaderColumn>
           <TableHeaderColumn dataField='name'
                              dataAlign='center'
                              headerAlign="center"
-                             width="70%">
-            Name
+                             width="30%">
+            Предмет
           </TableHeaderColumn>
-          <TableHeaderColumn dataField='value'
+          <TableHeaderColumn dataField='category'
                              dataAlign='center'
-                             headerAlign="center">
-            Value
+                             headerAlign="center"
+                             width='30%'>
+          Дисциплина
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField='result'
+                             dataAlign='center'
+                             headerAlign="center"
+                             width='10%'>
+            Баллы
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField='result100'
+                             dataAlign='center'
+                             headerAlign="center"
+                             width='20%'>
+            Успеваемость %
           </TableHeaderColumn>
         </BootstrapTable>
       </div>

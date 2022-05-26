@@ -3,6 +3,7 @@ import { Route, Routes, Link } from 'react-router-dom'
 
 import Home from '../pages/Home'
 import Profile from '../pages/Profile'
+import Gistogram from './Gistogram'
 import Test from './Test'
 
 
@@ -28,6 +29,7 @@ export default function Header() {
         <Route path="/" element={<Home />}/>
         <Route path="/profile" element={<Profile />}/>
         <Route path="/test" element={<Test />}/>
+        <Route path="/profile/gistogramm" element={<Gistogram />}/>
       </Routes>
     </>
   )

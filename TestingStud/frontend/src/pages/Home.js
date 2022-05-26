@@ -19,8 +19,8 @@ export default class Home extends Component {
             },
             {
               id: 3,
-              title: 'Разработка программных продуктов и систем',
-              category: 'IT'
+              title: 'История России',
+              category: 'История'
             }
           ]
         }
