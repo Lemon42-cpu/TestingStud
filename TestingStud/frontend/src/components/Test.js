@@ -10,10 +10,10 @@ const Test = () => {
       {testState.showResults && (
         <div className='results'>
           <div className='congratulations'>УРА!</div>
-          <div className='reults-info'>
+          <div className='results-info'>
             <div>Вы прошли тест!</div>
             <div>Вы правильно ответили на {testState.correctAnswerCount} из {testState.questions.length}</div>
-            <div className='next-button' onClick={() => dispatch({type: "RESTART"})}>Заново</div>
+            <div className='next-button' onClick={() => dispatch({type: "RESTART"})}>На главную страницу</div>
           </div>
           </div>
       )}
