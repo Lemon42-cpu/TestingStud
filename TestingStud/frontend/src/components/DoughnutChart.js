@@ -6,10 +6,10 @@ import {Link} from 'react-router-dom'
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
-  labels: ['ИТ', 'История'],
+  labels: ['ИТ', 'История', 'Математика', 'Физкультура', 'Физика'],
   datasets: [
     {
-      data: [66, 33],
+      data: [37, 12, 25, 12, 12],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',

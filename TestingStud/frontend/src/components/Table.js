@@ -22,7 +22,7 @@ class Table extends Component {
           <TableHeaderColumn dataField='name'
                              dataAlign='center'
                              headerAlign="center"
-                             width="30%">
+                             width="40%">
             Предмет
           </TableHeaderColumn>
           <TableHeaderColumn dataField='category'
@@ -40,7 +40,7 @@ class Table extends Component {
           <TableHeaderColumn dataField='result100'
                              dataAlign='center'
                              headerAlign="center"
-                             width='20%'>
+                             width='30%'>
             Успеваемость %
           </TableHeaderColumn>
         </BootstrapTable>
