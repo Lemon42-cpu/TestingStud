@@ -10,17 +10,42 @@ export default class Home extends Component {
             {
               id: 1,
               title: 'РКСП',
-              category: 'IT' 
+              category: 'ИТ' 
             },
             {
               id: 2,
               title: 'ООП',
-              category: 'IT'
+              category: 'ИТ'
             },
             {
               id: 3,
+              title: 'Информатика',
+              category: 'ИТ'
+            },
+            {
+              id: 4,
               title: 'История России',
               category: 'История'
+            },
+            {
+              id: 5,
+              title: 'Математический анализ',
+              category: 'Математика'
+            },
+            {
+              id: 6,
+              title: 'Линейная алгебра',
+              category: 'Математика'
+            },
+            {
+              id: 7,
+              title: 'ОФП',
+              category: 'Физкультура'
+            },
+            {
+              id: 8,
+              title: 'Физика',
+              category: 'Физика'
             }
           ]
         }
